@@ -1,0 +1,252 @@
+/* Палітра сторінок. */
+
+:root {
+  --primary-bg-color: #f5f5f5;
+  --secondary-bg-color: #f5f4fa;
+  --primary-txt-color: #212121;
+  --secondary-txt-color: #757575;
+  --accent-color: #2196f3;
+  --active-btn-color: #188ce8;
+  --highlight-color: #fff;
+  --hero-footer-bg-color: #2f303a;
+  --logo-nav-color: #000;
+  --cart-bg-color: #eee;
+  --contact-text-footer: rgba(255, 255, 255, 0.6);
+}
+
+/* Стилі, загальні для усіх елементів. */
+
+body {
+  /* Typografy */
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+
+  /* Visual */
+  background-color: var(--primary-bg-color);
+  color: var(--primary-txt-color);
+}
+
+/* Загальні стилі для списків та посилань. */
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+/* Стилізація логотипу. */
+
+.logo {
+  /* Typografy */
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19em;
+
+  /* Visual */
+  color: var(--accent-color);
+}
+
+.logo:hover,
+.logo:focus {
+  color: var(--accent-color);
+}
+
+.logo .logo-nav {
+  color: var(--logo-nav-color);
+}
+
+.logo .logo-footer {
+  color: var(--highlight-color);
+}
+
+/* Стилізація верхньої навігації. */
+
+.main-nav {
+  background-color: var(--highlight-color);
+}
+
+.site-nav .link,
+.contact-nav .link {
+  /* Typografy */
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  /* Visual */
+  color: var(--primary-txt-color);
+}
+
+/* Загальний колір елементів контактів у навігації і тексту абзацу.
+   Стилізацію контактів зроблено за допомогою правила, що розташовано нижче. */
+
+.contact-nav .link,
+.text {
+  color: var(--secondary-txt-color);
+}
+
+/* Стилізація акценту на посиланнях у навігації. */
+
+.site-nav .link:hover,
+.site-nav .link:focus,
+.contact-nav .link:hover,
+.contact-nav .link:focus,
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+/* Загальний фон для героя і підвалу. */
+
+.hero,
+.page-footer {
+  background-color: var(--hero-footer-bg-color);
+}
+
+/* Загальна стилізація заголовків h1 сторінок. */
+
+.hero-title,
+.portfolio-title {
+  /* Typografy */
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Окремий колір заголовку h1 для героя. */
+
+.hero-title {
+  color: var(--highlight-color);
+}
+
+/* Стилізація заголовків h2 і h3 */
+
+.section-title,
+.subtitle {
+  color: var(--primary-txt-color);
+}
+
+.section-title {
+  /* Typografy */
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+/* Стилізація заголовків і тексту для блока "Особливості". */
+
+.feature-list .subtitle {
+  /* Typografy */
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.feature-list .text {
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+/* Окрема стилізація блоку "Наша команда". */
+.team {
+  background-color: var(--secondary-bg-color);
+}
+
+.team-list .subtitle {
+  /* Typografy */
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+/* Стилізація галереї портфоліо. */
+
+.gallery .cart {
+  background-color: var(--cart-bg-color);
+}
+
+.gallery .subtitle {
+  /* Typografy */
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.gallery .text {
+  font-size: 16px;
+  line-height: 1.88;
+}
+
+/* Стилізація кнопки (герой) та
+   кнопок фільтру. */
+
+/* Загальний стиль для курсору */
+
+.btn,
+.filter {
+  cursor: pointer;
+}
+
+/* Окремий стиль кнопки (герой). */
+
+.btn {
+  /* Typografy */
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  /* Visual */
+  color: var(--highlight-color);
+  background-color: var(--accent-color);
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--active-btn-color);
+}
+
+/* Окремий стиль кнопок фільтру. */
+
+.filters .filter {
+  /* Typografy */
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+
+  /* Visual */
+  color: var(--primary-txt-color);
+  background-color: var(--secondary-bg-color);
+}
+
+.filters .filter:hover,
+.filters .filter:focus {
+  color: var(--highlight-color);
+  background-color: var(--accent-color);
+}
+
+/* Стилізація елементів-контактів у підвалі. */
+
+.contact-footer .link {
+  /* Typografy */
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.71;
+
+  /* Visual */
+  color: var(--contact-text-footer);
+}
+
+.contact-footer .link.light {
+  color: var(--highlight-color);
+}
+
+.contact-footer .link:hover,
+.contact-footer .link:focus {
+  color: var(--accent-color);
+}
