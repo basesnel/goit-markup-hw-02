@@ -1,13 +1,12 @@
 /* Палітра сторінок. */
 
 :root {
-  --primary-bg-color: #f5f5f5;
+  --primary-bg-color: #fff;
   --secondary-bg-color: #f5f4fa;
   --primary-txt-color: #212121;
   --secondary-txt-color: #757575;
   --accent-color: #2196f3;
   --active-btn-color: #188ce8;
-  --highlight-color: #fff;
   --hero-footer-bg-color: #2f303a;
   --logo-nav-color: #000;
   --cart-bg-color: #eee;
@@ -36,6 +35,11 @@ body {
   text-decoration: none;
 }
 
+/* .link:hover,
+.link:focus {
+  color: var(--accent-color);
+} */
+
 /* Стилізація логотипу. */
 
 .logo {
@@ -59,14 +63,10 @@ body {
 }
 
 .logo .logo-footer {
-  color: var(--highlight-color);
+  color: var(--primary-bg-color);
 }
 
 /* Стилізація верхньої навігації. */
-
-.main-nav {
-  background-color: var(--highlight-color);
-}
 
 .site-nav .link,
 .contact-nav .link {
@@ -90,13 +90,13 @@ body {
 
 /* Стилізація акценту на посиланнях у навігації. */
 
-.site-nav .link:hover,
+/* .site-nav .link:hover,
 .site-nav .link:focus,
 .contact-nav .link:hover,
 .contact-nav .link:focus,
 .site-nav .link.current {
   color: var(--accent-color);
-}
+} */
 
 /* Загальний фон для героя і підвалу. */
 
@@ -121,7 +121,7 @@ body {
 /* Окремий колір заголовку h1 для героя. */
 
 .hero-title {
-  color: var(--highlight-color);
+  color: var(--primary-bg-color);
 }
 
 /* Стилізація заголовків h2 і h3 */
@@ -157,6 +157,10 @@ body {
   background-color: var(--secondary-bg-color);
 }
 
+.team-list .team-item {
+  background-color: var(--primary-bg-color);
+}
+
 .team-list .subtitle {
   /* Typografy */
   font-weight: 500;
@@ -165,10 +169,6 @@ body {
 }
 
 /* Стилізація галереї портфоліо. */
-
-.gallery .cart {
-  background-color: var(--cart-bg-color);
-}
 
 .gallery .subtitle {
   /* Typografy */
@@ -189,6 +189,7 @@ body {
 
 .btn,
 .filter {
+  font-family: inherit;
   cursor: pointer;
 }
 
@@ -202,7 +203,7 @@ body {
   letter-spacing: 0.06em;
 
   /* Visual */
-  color: var(--highlight-color);
+  color: var(--primary-bg-color);
   background-color: var(--accent-color);
 }
 
@@ -226,7 +227,7 @@ body {
 
 .filters .filter:hover,
 .filters .filter:focus {
-  color: var(--highlight-color);
+  color: var(--primary-bg-color);
   background-color: var(--accent-color);
 }
 
@@ -242,11 +243,31 @@ body {
   color: var(--contact-text-footer);
 }
 
-.contact-footer .link.light {
-  color: var(--highlight-color);
+.contact-footer .light {
+  color: var(--primary-bg-color);
 }
 
-.contact-footer .link:hover,
+/* .contact-footer .link:hover,
 .contact-footer .link:focus {
   color: var(--accent-color);
+} */
+
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
+}
+
+/* Клас для приховання заголовків. */
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
